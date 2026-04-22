@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thanh Nhựt Duy | Technical Business Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NHUTDUY<span>.BA</span></div>
+        <ul>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#contact" class="btn-contact-nav">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header id="about">
+        <div class="hero-container">
+            <div class="hero-badge">Sẵn sàng cho các thử thách mới</div>
+            <h1>Chào bạn, mình là <br><span class="highlight">Nguyễn Thanh Nhựt Duy</span></h1>
+            <p class="subtitle">IT Business Analyst | Technical Solutions Explorer</p>
+            <div class="bio-text">
+                Mình là sinh viên CNTT đam mê lĩnh vực Business Analysis. Với nền tảng kỹ thuật vững chắc, mình tập trung vào việc số hóa quy trình và tối ưu hóa hệ thống thông qua các giải pháp công nghệ thực tế.
+            </div>
+            <div class="social-tags">
+                <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-thanh-nh%E1%BB%B1t-duy-6a4139405/" target="_blank" class="tag btn-glass"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/sukissenpai" target="_blank" class="tag btn-glass"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="tag btn-glow"><i class="fas fa-file-download"></i> Tải CV (PDF)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2 class="section-title">Kỹ năng chuyên môn</h2>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Business Analysis</h3>
+                <p>Khảo sát nghiệp vụ, viết SRS, vẽ UML (Use Case, Activity, Sequence) và thiết kế Wireframe.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Technical Background</h3>
+                <p>Nền tảng tốt về SQL Server, Linux (Ubuntu), cấu hình Server (DHCP, NAT, NFS) và Networking.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-sync"></i>
+                <h3>Process & Management</h3>
+                <p>Thành thạo Agile/Scrum, Jira, Trello và quản lý tiến độ dự án qua các Sprint.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="p-preview p-1"><span>Technical BA / PM</span></div>
+                <div class="p-info">
+                    <h4>Quản lý Cửa hàng 24H</h4>
+                    <p>Số hóa quy trình vận hành, quản lý kho và thanh toán cho chuỗi cửa hàng tiện lợi.</p>
+                    <button class="btn-detail" onclick="openModal('modal-shop')">Xem chi tiết <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-preview p-2"><span>System Analysis</span></div>
+                <div class="p-info">
+                    <h4>Quản lý Khóa luận</h4>
+                    <p>Nền tảng số hóa quy trình đăng ký và bảo vệ khóa luận tại ĐH Sư phạm TP.HCM.</p>
+                    <button class="btn-detail" onclick="openModal('modal-thesis')">Xem chi tiết <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-preview p-3"><span>Windows App</span></div>
+                <div class="p-info">
+                    <h4>Quản lý Thư viện</h4>
+                    <p>Ứng dụng Desktop hỗ trợ mượn trả tài liệu và quản lý độc giả tự động.</p>
+                    <button class="btn-detail" onclick="openModal('modal-library')">Xem chi tiết <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-shop" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-shop')">&times;</span>
+            <div class="modal-header">
+                <h2>Quản lý Cửa hàng 24H</h2>
+                <span class="badge">Technical BA / PM</span>
+            </div>
+            <div class="modal-body">
+                <p>Vai trò: <strong>Project Manager</strong>. Lập kế hoạch, quản lý tiến độ và thiết kế luồng nghiệp vụ.</p>
+                <div class="image-gallery">
+                    <div class="img-item"><p>Tài khoản</p><img src="qltk.png"></div>
+                    <div class="img-item"><p>Áp dụng giảm giá</p><img src="mgg.png"></div>
+                    <div class="img-item"><p>Quản lý khuyến mãi</p><img src="ctkm.png"></div>
+                    <div class="img-item"><p>Tiến độ Sprint</p><img src="qlda.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-thesis" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-thesis')">&times;</span>
+            <div class="modal-header">
+                <h2>Quản lý Khóa luận</h2>
+                <span class="badge">OOAD / Analysis</span>
+            </div>
+            <div class="modal-body">
+                 <p>Vai trò: <strong>Vai trò: Phân tích hệ thống & Thiết kế luồng nghiệp vụ</strong>. Trực tiếp chịu trách nhiệm chuyển đổi các yêu cầu từ phía Khoa và Nhà trường thành mô hình kỹ thuật chi tiết phục vụ cho việc phát triển phần mềm.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="img-item"><p>Đăng ký</p><img src="gddk.png"></div>
+                    <div class="img-item"><p>Lịch bảo vệ</p><img src="xlbvkl.png"></div>
+                    <div class="img-item"><p>Quản lý kỳ khóa luận</p><img src="qlkkl.png"></div>
+                    <div class="img-item"><p>Use Case</p><img src="usecase.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-library" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-library')">&times;</span>
+            <div class="modal-header">
+                <h2>Quản lý Thư viện</h2>
+                <span class="badge">WinForms / SQL Server</span>
+            </div>
+            <div class="modal-body">
+                <p>Vai trò: <strong>Vai trò: Database Engineer & System Analyst</strong>. Đảm nhận trách nhiệm thiết kế cấu trúc dữ liệu nền tảng và trực tiếp truyền tải giải pháp tới hội đồng chuyên môn.</p>
+                <div class="image-gallery">
+                    <div class="img-item"><p>Dashboard</p><img src="dashboard.png"></div>
+                    <div class="img-item"><p>Phiếu mượn</p><img src="pm.png"></div>
+                    <div class="img-item"><p>Tiếp nhận sách</p><img src="tns.png"></div>
+                    <div class="img-item"><p>In phiếu mượn</p><img src="in.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Kết nối với mình</h2>
+        <p>Email: <strong>duydevilmonters@gmail.com</strong></p>
+        <a href="mailto:duydevilmonters@gmail.com" class="btn-glow">Gửi tin nhắn ngay</a>
+        <div class="footer-bottom">&copy; 2026 Nguyễn Thanh Nhựt Duy.</div>
+    </footer>
+
+    <script>
+        function openModal(id) { document.getElementById(id).style.display = "block"; document.body.style.overflow = "hidden"; }
+        function closeModal(id) { document.getElementById(id).style.display = "none"; document.body.style.overflow = "auto"; }
+        window.onclick = function(e) { if (e.target.className === "modal") { e.target.style.display = "none"; document.body.style.overflow = "auto"; } }
+    </script>
+</body>
+</html>
